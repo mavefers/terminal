@@ -30,6 +30,15 @@ Comandos de la Shell:
         h = human / humano
         Sirve para visalizar los elementos, con informacion mas detallada de manera simplificada; con lectura "humana".
         Te muestra el peso de los archivos, en kilobytesm, megabytes, gigabytes, etc <.
+
+    ls -R
+        Sirve para listar archivos, directorios y sus sub-directorios con sus elementos incluídos.
+    
+    ls -a
+        Sirve para listar elementos visibles y ocultos.
+        
+    ls -al
+        Sirve para listar elementos visibles y ocultos, de manera detallada.
     
     cd ~
         Te redirige a la carpeta 'usuario'.
@@ -53,5 +62,4 @@ Comandos de la Shell:
 
     file [archivo.extension]
         Sirve para visualizar la informacion y el tipo de archivo de cualquier elemento, sean archivos o directorios.
-    
     
