@@ -7,7 +7,9 @@ Aprendiendo a manipular desde la Terminal, todo lo que usualmente haces desde la
 -   Copiarlos
 -   Eliminarlos
 
-Todos los archivos que tengan un punto (.) antes de iniciar el nombre, Linux los marca como "archivos ocultos".
+
+* Todos los archivos que tengan un punto (.) antes de iniciar el nombre, Linux los marca como "archivos ocultos".
+
 
 Instalar 'tree':
     Comando:
@@ -24,7 +26,7 @@ Commands Tree with their options:
         Nos muestra la anatomia de carpetas y sub-carpetas, en niveles, dependiendo del numero de nivel o niveles que hayamos elegido.
 
 
-Commands:
+Commands 1 / Comandos 1:
 
     ls -lS (S = Size / Tamanio)
         Ordena todos los directorios y documentos, por tamaño, comenzando desde los archivos más pesados, hasta los más ligeros.
@@ -42,7 +44,7 @@ Commands:
         Se usa poniendo el nombre del directorio, entre comillas.
         Que el nombre esté entre comillas, sirve para declarar nombres separados.
 
--Cuando se manipulan directorios con espacios, se declaran entre comillas de una 'Nombre del Directorio'.
+* Cuando se manipulan directorios con espacios, se declaran entre comillas de una 'Nombre del Directorio'.
     
 
     mkdir [dir1 dir2 dir3]
@@ -90,7 +92,7 @@ Commands:
         -Sirve para remover elementos de manera recursiva.
         -Al tener la opcion 'i', se eleminará elemento por elemento, y en cada operación iniciada, retornará la pregunta de que si estamos seguros de borrar tal archivo.
     
--Se pueden borrar varios archivos y directorios, al mismo tiempo.
+* Se pueden borrar varios archivos y directorios, al mismo tiempo.
 
     Recomendación (rm):
         Revisar bien los nombres antes de borrar archivos o elementos.
@@ -98,7 +100,7 @@ Commands:
         Es muy *importante* eliminar archivos con la opcion de interactividad (-i).
     
 
-Anatomy/Anatomia de la Linea de Comandos:
+* Anatomy/Anatomia de la Linea de Comandos:
     [projects]$ rm -f example.txt
                 [projects]$ > prompt
                 rm          > command/comando
@@ -106,12 +108,18 @@ Anatomy/Anatomia de la Linea de Comandos:
                 example.txt > argument/argumento
 
 
-Options:
+* Options:
     Se declaran después de colocar un guión (-[o]).
     -i
         Interactive: Pregunta si estamos seguros de borrar el archivo que hemos elegido.
     -v
         Sirve para ver qué está haciendo el comando que estámos ejecutando, en segundo plano.
+
+
+Commands 2 / Comandos 2:
+
+-   Explorar archivos de texto, desde la Terminal. head/tail/less
+-   Abrir el sistema de archivos. xdg-open
 
 
     head [archivoDeTexto.extension]
@@ -136,9 +144,19 @@ Options:
             /palabraX   > (al buscar la palabra, debemos respetar las minusculas y mayusculas)
         -Para salir de la interfaz de 'less', solo tenemos que apretar el botón 'q' de "quit".
     
+    code [ruta/archivo]
+        Sirve para abrir cualquier archivo de texto, de cualquier formato, en VSCode.
+
+    xdg-open [ruta/archivo]
+    xdg-open [directorio]
+        Sirve para abrir archivos y directorios.
+
 
 * Para parar forzosamente un proceso que se está ejecutando en la Terminal, solo debemos presionar la siguiente combinación: Ctrl + C
 
+
 Sintaxis de una ruta:
     ./dir1/dir2/archivo.extension
-        -Al final siempre tendrá que estar el archivo que estaremos manipulando.
+        -Al final siempre tendrá que estar el archivo que estaremos manipulando, con su respectivo nombre y extensión.
+
+    
