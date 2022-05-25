@@ -148,9 +148,17 @@ Commands 2 / Comandos 2:
         Sirve para abrir cualquier archivo de texto, de cualquier formato, en VSCode.
 
     xdg-open [ruta/archivo]
+        Sirve para abrir un archvio
     xdg-open [directorio]
-        Sirve para abrir archivos y directorios.
+        Sirve para abrir directorios.
 
+    wslview [nombreArchivo.extencionArchivo]
+        Sirve para abrir un archvio
+    wslview [nombreDirectorio]
+        Sirve para abrir directorios.
+    
+    explorer.exe .
+        Sirve para abrir el explorador de archivos en el directorio actual, en el que nos encontramos.
 
 * Para parar forzosamente un proceso que se está ejecutando en la Terminal, solo debemos presionar la siguiente combinación: Ctrl + C
 
