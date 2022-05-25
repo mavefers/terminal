@@ -53,4 +53,12 @@ Commands/Comandos:
         Sirve para imprimir texto.
         -Se recomienda no escribir doble signo de exclamacion (!!), porque crea un error al imprimir.
     
+    echo $SHELL
+        Muestra el tipo de Shell que estamos usando.
+        
+    echo $0
+        -Sirve para ver qué Shell estamos usando.
+        Muestra el nombre del proceso que se está ejecutando. Si lo usa dentro de una terminal, devolverá el nombre de la terminal. Si lo usa dentro de un script, será el nombre del script.
+
+
 * Algunos comandos no tienen manual de referencia.
