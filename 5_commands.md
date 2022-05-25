@@ -18,6 +18,7 @@ Comando 'type'
         Ejemplo: 'type ls'
             return: ls is aliased to 'ls --color=auto'
     
+* Para salir de una interfaz o proceso, de una manera forzada, apretar la siguiente combinación de botones: "Ctrl C".
 
 Commands/Comandos:
     alias [comandoNuevo="comandoGuardado"]
@@ -55,10 +56,20 @@ Commands/Comandos:
     
     echo $SHELL
         Muestra el tipo de Shell que estamos usando.
-        
+
     echo $0
         -Sirve para ver qué Shell estamos usando.
         Muestra el nombre del proceso que se está ejecutando. Si lo usa dentro de una terminal, devolverá el nombre de la terminal. Si lo usa dentro de un script, será el nombre del script.
 
 
 * Algunos comandos no tienen manual de referencia.
+
+
+
+Comandos extras, muy importantes:
+
+    cd /mnt/c/Users/username
+        Sirve para ver todos los archivos que tenemos en nuestro apartado de nuestro usuario en WindowsOS.
+    
+    eplorer.exe .
+        Sirve para abrir una interfaz grafica del Explorador de Windows, del directorio en el que nos encontramos actualmente en la Terminal.
