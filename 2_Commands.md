@@ -38,6 +38,7 @@ Comandos de la Shell:
         Sirve para listar elementos visibles y ocultos.
         
     ls -al
+    ls -la
         Sirve para listar elementos visibles y ocultos, de manera detallada.
     
     cd ~
@@ -62,4 +63,3 @@ Comandos de la Shell:
 
     file [archivo.extension]
         Sirve para visualizar la informacion y el tipo de archivo de cualquier elemento, sean archivos o directorios.
-    
