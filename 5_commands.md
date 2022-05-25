@@ -49,4 +49,8 @@ Commands/Comandos:
         -No funciona para todos los comandos.
         -Es un comando binario.
     
+    echo "Texto a imprimir."
+        Sirve para imprimir texto.
+        -Se recomienda no escribir doble signo de exclamacion (!!), porque crea un error al imprimir.
+    
 * Algunos comandos no tienen manual de referencia.
