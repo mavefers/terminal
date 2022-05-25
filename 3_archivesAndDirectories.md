@@ -138,14 +138,16 @@ Commands 2 / Comandos 2:
         Comando de interaccion de texto de cualquier formato.
         Nos envía a otra interfaz, una interfaz bastante poderosa e interactiva.
         Nos muestra todo el archivo de texto.
-        Genera una especie de scroll, usando las flechas.
+        Genera una especie de scroll, usando las flechas para poder desplazarnos por todo el contenido del archivo.
         -Al apretar la Barra Espaciadora, nos dirigirá rápidamente al final del contenido del archivo de texto.
         -Cuando apretamos el botón '/' (slash), nos permitirá realizar una búsqueda de alguna palabra que esté dentro del archivo de texto.
             /palabraX   > (al buscar la palabra, debemos respetar las minusculas y mayusculas)
+            Ejemplo: '/palabra' '/Palabra' '/pAlAbrA', los tres ejemplos mencionados, buscan tres distintas palabras.
         -Para salir de la interfaz de 'less', solo tenemos que apretar el botón 'q' de "quit".
     
     code [ruta/archivo]
         Sirve para abrir cualquier archivo de texto, de cualquier formato, en VSCode.
+
 
     xdg-open [ruta/archivo]
         Sirve para abrir un archvio
@@ -156,7 +158,8 @@ Commands 2 / Comandos 2:
         Sirve para abrir un archvio
     wslview [nombreDirectorio]
         Sirve para abrir directorios.
-    
+
+
     explorer.exe .
         Sirve para abrir el explorador de archivos en el directorio actual, en el que nos encontramos.
 
