@@ -62,13 +62,16 @@ Flags/Options:
 Clases:
 
 '[...]'
-    '[]' : Podemos introducir, entre los corchetes, caracteres especificos que queremos buscar o manipular, filtrando asi una lista que contengan los caracteres que hemos declarado.
+
+'[abc]'
+* Selecciones por carateres.
+    Podemos introducir, entre los corchetes, caracteres especificos que queremos buscar o manipular, filtrando asi una lista que contengan los caracteres que hemos declarado.
     
     Ejemplo:
             La carpeta 'dir' contiene los siguientes archivos: 'arch1.sh', 'arch2.sh', 'arch3.sh', 'arch4.sh', 'arch5.sh' y 'arch6.sh'.
             
             -   Si queremos realizar la busqueda de solo los archivos 'arch3.sh' y 'arch4', tenemos que ejecutar el siguiente comando:
-                                                            'ls arch[34].sh'
+                'ls arch[34].sh'
 
     * No es necesario separar los caracteres que van dentro de '[ ]' con alguna coma, guion o algo similar.
         - Los caracteres no se separan con nada.
