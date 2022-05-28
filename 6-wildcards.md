@@ -51,7 +51,9 @@ Wildcard '?'
         - Esto borrará solo los archivos 'hola5.1.js' y 'hola5.2.js'.
 
 
-Clases regulares: '[...]'
+Clases:
+
+'[...]'
     '[]' : Podemos introducir, entre los corchetes, caracteres especificos que queremos buscar o manipular, filtrando asi una lista que contengan los caracteres que hemos declarado.
     
     Ejemplo:
@@ -62,3 +64,34 @@ Clases regulares: '[...]'
 
     * No es necesario separar los caracteres que van dentro de '[ ]' con alguna coma, guion o algo similar.
         - Los caracteres no se separan con nada.
+
+
+'[[:upper:]]*'
+            - Clase para seleccionar solo los archivos y directorios que comiencen con mayúscula.
+
+'[[:upper:]]*/'
+    Sirve para seleccionar solo los directorios del directorio actual, que comiencen en Mayúscula, *añadiendo todos los archivos que contienen los directorios seleccionados, sean archivos y directorios, solo los que cumplan con la regla de '[[:upper:]]*'.
+    - Solo funciona para dos niveles en el arbol de directorios, contando desde el directorio actual, hacia adelante; directorios del directorio actual  y todos tipo de contenido que contengan estos directorios, pero solo muestra a los hijos.
+        Ejemplo:
+        Cuando querermos buscar solo los directorios que comiencen en mayuscula, y en nuestro directorio actual tenemos lo siguiente:
+                Dir1/:
+                    Arch1.js
+                    Gool/
+                Dir2/:
+                    Arch2.js
+                    Pool/:
+                        Arco/
+                        Barco/
+                        Bote.js
+        Ejecutamos el comando: ls [[:upper:]]*/
+            Nos mostrara solo estos datos: El primer nievel, o sea el actual, y el siguiente, los hijos. No mostrará el contenido de los hijos.
+                Dir1/:
+                    Arch1.js
+                    Gool/
+                Dir2/:
+                    Arch2.js
+                    Pool/
+        
+
+
+'[[:upper:]]'
