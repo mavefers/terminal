@@ -51,6 +51,14 @@ Wildcard '?'
         - Esto borrará solo los archivos 'hola5.1.js' y 'hola5.2.js'.
 
 
+
+Flags/Options:
+    
+    -d
+        Sirve para seleccionar solo los archivos de la carpeta actual en la que nos encontramos.
+
+
+
 Clases:
 
 '[...]'
@@ -67,11 +75,11 @@ Clases:
 
 
 '[[:upper:]]*'
-            - Clase para seleccionar solo los archivos y directorios que comiencen con mayúscula.
+    Clase que sirve para seleccionar solo los archivos y directorios que comiencen con mayúscula, *Y QUE COMIENCEN EL NOMBRE CON NÚMERO*.
 
 '[[:upper:]]*/'
-    Sirve para seleccionar solo los directorios del directorio actual, que comiencen en Mayúscula, *añadiendo todos los archivos que contienen los directorios seleccionados, sean archivos y directorios, solo los que cumplan con la regla de '[[:upper:]]*'.
-    - Solo funciona para dos niveles en el arbol de directorios, contando desde el directorio actual, hacia adelante; directorios del directorio actual  y todos tipo de contenido que contengan estos directorios, pero solo muestra a los hijos.
+    Clase que sirve para seleccionar solo los directorios del directorio actual, que comiencen en Mayúscula, *añadiendo todos los archivos que contienen los directorios seleccionados, sean archivos y directorios, solo los que cumplan con la regla de '[[:upper:]]*', *Y QUE COMIENCEN EL NOMBRE CON NÚMERO*.
+    - Solo funciona para dos niveles en el arbol de directorios, contando desde el directorio actual, hacia adelante; directorios del directorio actual y todos tipo de contenido que contengan estos directorios, pero solo muestra a los hijos.
         Ejemplo:
         Cuando querermos buscar solo los directorios que comiencen en mayuscula, y en nuestro directorio actual tenemos lo siguiente:
                 Dir1/:
@@ -83,6 +91,8 @@ Clases:
                         Arco/
                         Barco/
                         Bote.js
+                di3/:
+
         Ejecutamos el comando: ls [[:upper:]]*/
             Nos mostrara solo estos datos: El primer nievel, o sea el actual, y el siguiente, los hijos. No mostrará el contenido de los hijos.
                 Dir1/:
@@ -91,7 +101,57 @@ Clases:
                 Dir2/:
                     Arch2.js
                     Pool/
-        
+
+'-d [[:upper:]]*'
+    Clase que sirve para seleccionar todos los archivos que comiencen con la primera letra del nombre en mayuscula, sean archivos/files o directorios, y que solo se encuentren en la carpeta actual.
+
+'-d [[:upper:]]*/'
+    Clase que sirve para seleccionar solo los directorios que comiencen con la primera letra del nombre en mayuscula, y que solo se encuentren en la carpeta actual.
 
 
-'[[:upper:]]'
+
+'[[:lower:]]*'dd
+    Clase que sirve para seleccionar solo los archivos/files o directorios que comiencen con la primera letra del nombre en minúscula, *Y QUE COMIENCEN EL NOMBRE CON NÚMERO*.
+
+'[[:lower:]]*/'
+    Clase que sirve para seleccionar solo los directorios que tengamos en el directorio actual, que solo comiencen con la primera letra de su nombre en minúscula, *añadiendo todos los archivos que contienen los directorios seleccionados, sean archivos/files y directorios, solo los que cumplan con la regla de '[[:lower:]]*', *Y QUE COMIENCEN EL NOMBRE CON NÚMERO*.
+    - Solo funciona para dos niveles en el arbol de directorios, contando desde el directorio actual, hacia adelante; directorios del directorio actual y todos tipo de contenido que contengan estos directorios, pero solo muestra a los hijos.
+        Ejemplo:
+        Cuando querermos buscar solo los directorios que comiencen en minúscula, y en nuestro directorio actual tenemos lo siguiente:
+                dir1/:
+                    Arch1.js
+                    gool/
+                dir2/:
+                    Arch2.js
+                    pool/:
+                        arco/
+                        Barco/
+                        bote.js
+                dir3/:
+                    12.js
+                    57/:
+                        atr.sh
+                    111.js
+                    ab/:
+                        123.js
+                Di4/:
+                
+        Ejecutamos el comando: ls [[:upper:]]*/
+            Nos mostrara solo estos datos: El primer nievel, o sea el actual, y el siguiente, los hijos. No mostrará el contenido de los hijos.
+                dir1/:
+                    Arch1.js
+                    gool/
+                dir2/:
+                    Arch2.js
+                    pool/
+                dir3/:
+                    12.js
+                    57/
+                    111.js
+                    ab/
+
+'-d [[:lower:]]*'
+    Clase que sirve para seleccionar todos los archivos que comiencen con la primera letra del nombre en minúscula, sean archivos/files o directorios, y que solo se encuentren en la carpeta actual.
+
+'-d [[:lower:]]*/'
+    Clase que sirve para seleccionar solo los directorios que comiencen con la primera letra del nombre en minúscula, y que solo se encuentren en la carpeta actual.
