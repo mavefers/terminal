@@ -158,3 +158,10 @@ Clases:
 
 '-d [[:lower:]]*/'
     Clase que sirve para seleccionar solo los directorios que comiencen con la primera letra del nombre en minúscula, y que solo se encuentren en la carpeta actual.
+
+
+Más clases / More classes :
+
+[:alnum:] Coincide con cualquier carácter alfanumérico. Números y letras.
+[:alpha:] Coincide con cualquier carácter alfabético. Letras.
+[:digit:] Coincide con cualquier número. Solo números.
