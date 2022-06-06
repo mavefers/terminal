@@ -51,6 +51,10 @@ Wildcard '?'
         - Esto borrará solo los archivos 'hola5.1.js' y 'hola5.2.js'.
 
 
+More Wildcards:
+[!caracteres] Coincide con cualquier carácter que *no* sea miembro del conjunto de caracteres.
+
+
 
 Flags/Options:
     
@@ -59,9 +63,9 @@ Flags/Options:
 
 
 
-Clases:
+Clases: [[:clase:]] Coincide con cualquier carácter del tipo de clase.
 
-'[...]'
+'[...]' (Caracteres, coincide con cualquier caracter que no sea miembro del conjunto de caracteres.)
 
 '[abc]'
 * Selecciones por carateres.
