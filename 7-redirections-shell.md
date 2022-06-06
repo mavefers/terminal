@@ -40,11 +40,11 @@ Sintaxis de ejemplo:
 
 Redirigir Standards, de Standard Output (1) a Standard Error (2), y de Standard Error (2) a Standar Output (1):
 '#' hacereferencia a los File descriptors.
-# = 0, 1, 2
+'#' = 0, 1, 2
     Redirigir salida de Standard Output (stdout) a Standard Error (stderr):
-        x 2> y
+        X 2> Y
     Redirigir salida de Standard Error (stderr) a Standard Output (stderr):
-        x 1> y
+        X 1> Y
 - Aquí se redirige el retorno de información, de unna vía, hacia otra.
 
 
