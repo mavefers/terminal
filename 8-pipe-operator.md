@@ -14,10 +14,28 @@ Ejemplo:
     cat list1.txt list2.txt > list1-2.txt
 
 
+tee
+    Funciona igual a la redirección '>'
+
+
 
 //
 
-Pipe Operator
+Pipe Operator '|'
+    Nos permite convertir el Standard Output en el Standard Input de otro comando.
+    - Es usado para generar filtros.
 
-Nos permite convertir el Standard Output en Standard Input de otro comando.
+Sintaxis:
+    comando(Stdin/Stdout) |(Stdin) comando(Stout) |(Stdin) comando(Stdin) |(Stdin) comando(Stdout) ...
+Ejemplo:
+    ls -l | tee nuevo-archivo.txt | less
 
+
+//
+
+cowsay
+    sudo apt install cowsay
+    'cowsay -l'
+lolcat
+    sudo apt-get update
+    sudo apt install lolcat
