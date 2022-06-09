@@ -56,3 +56,12 @@ Para redirigir la informacion del retorno hacia dos vías, sin importar que la s
                         ls asjdkhasjkd > nota.txt 2>&1
                         ls user >> nota.txt 2>&1
     - Nos ayuda para revisar posteriormente los errores, almacenarlos en un archivo, repasarlos y aprender de ellos.
+
+//
+
+    < :
+        Sirve para redirigir de un Standard Output a un Standard Input.
+        Hacen uso de la funcionalidad Input para mostrarlo en Standard Output.
+        Comandos que nos permiten explorar texto: cat, less, head, etc.
+    Ejemplo:
+        cat < texto.txt
