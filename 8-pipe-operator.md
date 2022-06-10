@@ -1,7 +1,7 @@
 Comandos / Commands
 
 echo
-- genera un standard output, en la Terminal, de cualquier cosa que le escribamos.
+- genera un standard output (stdout), en la Terminal, de cualquier cosa que le escribamos.
 Ejemplo:
     echo "hey! What's up? This is the command 'echo'"
         hey! What's up? This is the command 'echo'
@@ -15,7 +15,7 @@ Ejemplo:
 
 
 tee
-    Funciona igual a la redirección '>'
+    Funciona igual a la redirección '>'.
 
 
 
@@ -23,7 +23,8 @@ tee
 
 Pipe Operator '|'
     Nos permite convertir el Standard Output en el Standard Input de otro comando.
-    - Es usado para generar filtros.
+    El pipe operator '|' hace que el *stdout* de un comando sea el stdin de otro comando.
+    - Es usado para generar filtros, cuyos retornos pasan de un comando hacia otro.
 
 Sintaxis:
     comando(Stdin/Stdout) |(Stdin) comando(Stout) |(Stdin) comando(Stdin) |(Stdin) comando(Stdout) ...
@@ -39,3 +40,10 @@ cowsay
 lolcat
     sudo apt-get update
     sudo apt install lolcat
+
+- Hay comandos que no se ejecutan correctamente cuando pasan por el Standard Output (stdout). Uno de esos comandos es 'lolcat', cuya función es dotar de colores la información que nos retorna la Terminal.
+Ejemplo:
+    ls | lolcat | tee lista.txt
+- Entonces, la mejor manera de usar el comando 'lolcat' es al final de la concatenación de códigos.
+Ejemplo:
+    ls | tee lista.txt | lolcat
