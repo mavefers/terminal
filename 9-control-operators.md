@@ -41,14 +41,19 @@ Correr comandos de manera *condicional*.
 
 //
 
-Operador "or":
+Operador '||' (or):
     - Nos permite ejecutar solo el primer comando de la cadena, que pase por el Standard Output (stdout).
     - No importa la cantidad de comandos que tengamos en la cadena, si están separados por el operador '||', solo se efectuará el primero que se ejecute de forma correcta, descartando todos los comandos restantes.
     - Cuando en un inicio solo se ejecutan comandos de manera incorrecta, la cadena seguirá activa hasta que se encuentre el comando que se ejecute de manera correcta, y ahí finaliza la ejecución de la linea de comando.
 
     Example:
         cd ashjdkadh || touch text.pdf || date
-            - Aquí se está intentando ingresar a un directorio que no existe, por ende es un error, así que pasa al siguiente comando, touch, donde se intenta crear un archivo 'text.pdf', y como se ejecuta de manera exitosa, finaliza la ejecución de la linea de comando.
+            - Aquí se está intentando ingresar a un directorio que no existe, por ende es un error, así que la ejecución pasa al siguiente comando, 'touch', donde se intenta crear un archivo 'text.pdf', y como se ejecuta de manera exitosa, finaliza la ejecución total de la linea de comando.
+
+
+En comparación entre || y &&,
+    los comandos operados con ||, finalizan totalmente una vez ejecutado el primer comando, de manera satisfactoria;
+    cuando la línea de comandos operados con &&, continúan siendo ejecutados cuando se siguen ejecutando comandos correctamente, hasta que se tope con el primer error, ahí, la línea de comandos deja de funcionar, finaliza.
 
 //
 Challenge:
