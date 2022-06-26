@@ -46,7 +46,7 @@ r-x
 /
 
 rwx
-111   /   El "dueño" / "jefe" / "boss", el que tiene todos los permisos.
+111   /   El "owner", el que tiene todos los permisos.
 
 
 //
@@ -68,7 +68,7 @@ Representacion en Sistema de 3 bits:
 //
     Ejercicios
 
-Dueño
+Owner
     rwx
     111
         7
@@ -80,6 +80,18 @@ World
     r-x
     101
         5
+
+
+//
+Para ver los permisos de un archivo o directorio, se revisan con el comando "ls -l", usando la opción de "-l, de large".
+Un ejemplo común, aparecería así
+    -rw-r--r--
+    Esta línea de código se dividen en cuatro partes.
+        Y quiere decir que:
+                        "-" es un archivo normal
+                        "rw-", la sección del Owner, que tiene permiso 'r' de read/leer, 'w' de write/escribir, y '-' de no tener permiso.
+                        "r--", la seccion del Group, que tiene permiso 'r', read/leer, '-' de no tener permiso, y '-' de no tener permiso.
+                        "r--", la seccion del World/Others, que tiene permiso 'r', read/leer, '-' de no tener permiso, y '-' de no tener permiso.
 
 
 //
