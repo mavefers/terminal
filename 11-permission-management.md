@@ -90,3 +90,40 @@ Cuando se ejecuta una combinación de comandos para agregar, quitar, o sobrescri
 
 Comando 'whoami', que se traduce del inglés como "quién soy".
     Sirve para saber el nombre del user/usuario.
+
+//
+
+Comando 'id'
+Sirve para mostrarnos el 'uid', que es el valor del nombre de usuario, nos da informacion extra de los grupos a los que llegamos a pertenecer, etc.
+
+//
+
+Comando para cambiar de usuario, del personal al usuario "root":
+    su = switch user
+    Sintaxis:
+        su root
+        o
+        sudo su     (Si se usa una distribución de Ubuntu, tal como WSL, el comando 'su root' no funcionara, por eso es ideal usar 'sudo su'.)
+    Nos pedira que elijamos una contrasenha, puede ser cualquiera, e incluso la contrasenha de nuestro usuario personal.
+
+/
+
+Los archivos que se crearon a nombre del usuario root, no seran modificados ni removidos por parte del user personal.
+
+Se puede borrar, si luego de ejecutar el comando 'rm', se responde con 'y' de "yes" a la pregunta que retorna.
+
+/
+
+Es una mala práctica usar las mismas contraseñas, para diferente usuario.+
+
+/
+
+Comando para cambiar de contraseña. Se tiene que estar dentro del usuario del que deseas cambiar, puede ser el "personal user" o el "root":
+    'passwd'
+
+
+//
+
+Recomendacion:
+    Nunca dejar la Terminal en el usuario 'root', por defecto, así no será vulnerable al manejo por terceros.
+    Colocar contraseñas distintas para cada usuario, tal como para el usuario personal, como para el usuario root.
