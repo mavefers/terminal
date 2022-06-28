@@ -38,12 +38,25 @@ Una vez conocido el nombre de la variable, ya podemos...
                         - Los manejadores de paquetes son los encargados de traer un repositorio e instalar algún binario, todo dentro de la computadora. Algunos manejadores de paquetes: APT, DNF, NVM, Node, Python.
                         No todas las rutas de los binarios de los paquetes que se pretenden extraer e instalar, se encuentran listos para su función. Normalmente nos piden que agreguemos las rutas a la variable $PATH
 
+/
+
 CREAR UNA VARIABLE DE ENTORNO:
     Normalmente el nombre de la variable, se escribe con mayuscula.
     NOMBRE_DE_VARIABLE="Say hi!"
 
-    alias l='ls -lh'
-USER_MESSAGE="Hola amigos"
+    USER_MESSAGE="Hola amigos"
 
+/
+
+Crear un alias, ejemplo:
+    alias l='ls -lh'
+
+/
+
+* Editar el valor de $PATH para agregar una ruta hacer funcionar correctamente un programa compilado.
+
+PATH=$PATH:/rutaparaaniadir
 
 Los dos puntos ':', funcionan como suma '+'.
+
+Tener mucho cuidado al modificar el valor de PATH, ya que de eso dependen muchos programas que hayamos instalado anteriormente.
