@@ -1,11 +1,12 @@
 Variables de Entorno
     Definición y Modo de uso.
 
-Sirven para acceder a la configuración y a los difentes valores del sistema.
+Son como variables predeterminadas por parte del sistema, donde guardan como valor, información relevante del sistema.
+Sirven para acceder a la configuración y a los diferentes valores del sistema.
 
 //
 
-Links simbolicos:
+Links simbólicos:
     Son accesos directos desde la terminal.
     Son un tipo de archivos que hacen referencia a un lugar.
 
@@ -17,7 +18,7 @@ Sintaxis:
 
 /
 
-Los links simbolicos como tal, no tienen permisos.
+Los links simbólicos como tal, no tienen permisos.
 
 //
 
@@ -31,5 +32,18 @@ Una vez conocido el nombre de la variable, ya podemos...
         'echo $[nombreDeLaVarible]
     
     Ejemplos de variables de entorno:
-        $HOME   >>>     nos muestra la ruta del user.
-        $PATH   >>>     nos muestra todas las rutas de los binarios que ejecutan nuestro sistema.
+        $HOME   >>>     nos muestra la ruta del user. Nos sirve para configurar alguna ruta específica.
+        $PATH   >>>     nos muestra todas las rutas de los binarios que ejecutan nuestro sistema. Funciona cuando usamos Pearl o NodeJS
+                        La variable $PATH es muy importante para ver los binarios que llevan los manejadores de paquetes.
+                        - Los manejadores de paquetes son los encargados de traer un repositorio e instalar algún binario, todo dentro de la computadora. Algunos manejadores de paquetes: APT, DNF, NVM, Node, Python.
+                        No todas las rutas de los binarios de los paquetes que se pretenden extraer e instalar, se encuentran listos para su función. Normalmente nos piden que agreguemos las rutas a la variable $PATH
+
+CREAR UNA VARIABLE DE ENTORNO:
+    Normalmente el nombre de la variable, se escribe con mayuscula.
+    NOMBRE_DE_VARIABLE="Say hi!"
+
+    alias l='ls -lh'
+USER_MESSAGE="Hola amigos"
+
+
+Los dos puntos ':', funcionan como suma '+'.
