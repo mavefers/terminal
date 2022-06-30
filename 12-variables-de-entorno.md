@@ -37,6 +37,7 @@ Una vez conocido el nombre de la variable, ya podemos...
                         La variable $PATH es muy importante para ver los binarios que llevan los manejadores de paquetes.
                         - Los manejadores de paquetes son los encargados de traer un repositorio e instalar algún binario, todo dentro de la computadora. Algunos manejadores de paquetes: APT, DNF, NVM, Node, Python.
                         No todas las rutas de los binarios de los paquetes que se pretenden extraer e instalar, se encuentran listos para su función. Normalmente nos piden que agreguemos las rutas a la variable $PATH
+                        -Path es una variable de entorno que me muestra la ubicación de nuestros archivos binarios.
 
 /
 
@@ -50,6 +51,11 @@ CREAR UNA VARIABLE DE ENTORNO:
 
 Crear un alias, ejemplo:
     alias l='ls -lh'
+
+    Funciona dependiendo del trabajo constante que estés realizando, por ejemplo, cuando usamos constantemente Git, podemos codificar rápido creando *alias*.
+    -No lo recomiendo para principiantes, solo para personas con experiencia.
+
+    Si vamos a usar alias debemos tener cuidado con no asignar un nombre de algún comando que ya exista.
 
 /
 
