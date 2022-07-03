@@ -1,6 +1,7 @@
 GREP.
     *Nos permite encontrar coincidencias de una búsqueda, dentro de cualquier archivo de texto.*
     - Nos sirve para realizar búsquedas profundas o específicas en archivos de gran magnitud.
+    - Se pueden incluir wildcard como nombres de archivos. para realizar una busqueda mas compleja.
 
 Sintaxis:
     grep [expresionRegular,palabraABuscar] [archivoDondeBuscar]
@@ -19,7 +20,7 @@ Opciones de grep
     Podemos combinar opciones, ejemplo:  '-ci' o '-ic'.
         Asi, tambien con otras opciones.
     
-/
+//
 
 Comando 'wc'
     Nos indica la cantidad de "lineas", "caracteres" y "bits" que tiene un archivo.
@@ -28,3 +29,10 @@ Comando 'wc'
         '-l', indica la cantidad de lineas que tiene el archivo.
         '-w', indica la cantidad de palabras.
         '-c', indica la antidad de bits.
+
+    Sintaxis:
+        wc [archivo]
+            [lineas] [palabras] [bits] [archivo]
+        
+        wc [option] [archivo]
+            [option] [archivo]
