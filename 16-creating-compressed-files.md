@@ -52,10 +52,11 @@ Sintaxis:
 
 comando: rar
 Sintaxis:
-    rar -r [el-que-sera-el-archivo-comprimido.rar] [archivo-directorio-a-Comprimir]
+    rar a [el-que-sera-el-archivo-comprimido.rar] [archivo-directorio-a-Comprimir]
 
-    opciones:
-        -r = recursiva
+    opciones: Las opciones no llevan guion (-)
+              A las opciones se les llaman comandos.
+        a = add// Agrega archivos o carpetas al archivo a comprimir.
 
 /
 
@@ -63,3 +64,6 @@ Sintaxis:
         Se ejecuta el comando 'unrar', seguido del archivo comprimido.
         Sintaxis:
             unrar [directorio-comprimido.rar]
+        comandos/opciones:
+            e = extract// extrae directamente los archivos, sin la necesidad de extraer la carpeta completa.
+            x = eXtract// extrae toda la carpeta, incluyendo por dentro los archivos que lleva.
