@@ -12,10 +12,12 @@ Sintaxis:
         -c = create//crear un archivo
         -v = verbose// Nos muestra, en la Terminal, todo lo que estuvo comprimiendo // lista todos los ficheros que trata//verbosely list files
         -f = sirve para indicar que nos retorne un file.
+            Sintaxis:
+                tar [-cvf] [el-que-sera-el-archivo-comprimido.tar] [archivo-a-Comprimir]
 
         -z = gzip// se encarga de procesar el archivo con gzip // gzip es una mejora de la compresion *tar*
             gzip: es un algoritmo de compresion bastante eficiente, se recomienda usarlo para la mayoria de los archivos de texto plano, como lo son "repositorios de codigo".
-            Sintaxis: (solo cambia la extension del archivo a comprimido, agregandole '.gz' al final)
+            Sintaxis: (solo cambia la extension del archivo a comprimir, agregandole '.gz' al final)
                 tar [-cvzf] [el-que-sera-el-archivo-comprimido.tar.gz] [archivo-a-Comprimir]
 
 /
@@ -24,6 +26,7 @@ Sintaxis:
         Se sustituye la opciones (-c) por '-x'.
             -x = excluye los ficheros/archivos creados en file.
         Sintaxis:
+            tar [-xvf] [el-que-sera-el-archivo-comprimido.tar]
             tar [-xvzf] [el-que-sera-el-archivo-comprimido.tar.gz]
 
 /
