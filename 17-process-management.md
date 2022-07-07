@@ -1,9 +1,13 @@
+Temas:
 terminar aprocesos
 visualizar
 manejar
 filtrar
 
 Comandos (Solo nos mostrará los procesos que tenemos en Ubuntu, más no los procesos que tengamos en Windows, ya que Windows no se lo permite)
+
+* Cuando un proceso está en ejecución, en segundo plano, se dice que se está ejecutando en el "background".
+* Si la ejecución del comando se muestra en primer plano, se dice que está en "foreground".
 
 ps
     Nos muestra los procesos o comandos que estan corriendo actualmente en la Terminal.
